@@ -1,0 +1,36 @@
+apiVersion: litmuchaos.io/v1alpha1
+kind: ChartServiceVersion
+metadata:
+  createdAt: 2022-10-25T18:03:08Z
+  name: pod-delete
+  version: 0.1.0
+  annotations:
+    categories: pod-delete
+    chartDescription: Injects chaos on kube-prox application
+spec:
+  displayName: Pod-delete Chaos
+  categoryDescription: >
+    It inject chaos on pod-delete, and revert the chaos
+  experiments:
+    - pod-delete
+  keywords:
+    - Kubernetes
+    - Pod-delete
+    - Pod
+  platforms:
+    - GKE
+    - Minikube 
+    - Packet(Kubeadm)
+    - EKS
+    - AKS
+  maintainers:
+    - name: flag
+      email: fengkangb@digitalchina.com
+  provider:
+    name: ChaosNative
+  links:
+    - name: WeChat
+      url: digitalchina
+  icon:
+    - url:
+      mediatype: ""
